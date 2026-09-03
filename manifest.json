@@ -1,0 +1,41 @@
+{
+    "manifest_version": 3,
+    "name": "GeoLens",
+    "version": "0.5",
+    "description": "Enhance your GeoGuessr experience",
+    "icons": {
+        "128": "assets/GEOLENS_LOGO.svg"
+    },
+    "permissions": [],
+    "host_permissions": [
+        "https://www.geoguessr.com/*",
+        "https://api.telegram.org/*",
+        "https://nominatim.openstreetmap.org/*",
+        "https://static-maps.yandex.ru/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "world": "MAIN",
+            "matches": [
+                "https://www.geoguessr.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "all_frames": true,
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "https://www.geoguessr.com/*"
+            ],
+            "js": [
+                "bridge.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}

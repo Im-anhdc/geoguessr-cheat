@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">GeoLens logo</title>
+  <desc id="desc">A blue globe viewed through a magnifying glass with an orange location marker.</desc>
+  <defs>
+    <linearGradient id="ocean" x1="80" y1="64" x2="392" y2="408" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F5B78"/>
+      <stop offset="1" stop-color="#123B5D"/>
+    </linearGradient>
+    <linearGradient id="handle" x1="336" y1="344" x2="464" y2="472" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F28C28"/>
+      <stop offset="1" stop-color="#D95D27"/>
+    </linearGradient>
+    <clipPath id="globeClip">
+      <circle cx="224" cy="224" r="160"/>
+    </clipPath>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#F4F1EA"/>
+  <circle cx="224" cy="224" r="174" fill="#D9E6E8"/>
+  <circle cx="224" cy="224" r="160" fill="url(#ocean)"/>
+  <g clip-path="url(#globeClip)" fill="none" stroke="#74B7BD" stroke-width="7" opacity=".9">
+    <ellipse cx="224" cy="224" rx="68" ry="160"/>
+    <ellipse cx="224" cy="224" rx="132" ry="160"/>
+    <path d="M64 224h320M83 148h282M83 300h282"/>
+  </g>
+  <path d="M118 159c27-35 56-39 77-24l-10 37-32 17-25-9zm112 6 36-18 35 25-7 34-38 7-24-20zm-61 76 38-21 34 21-10 40-41 19-25-23z" fill="#79B88D"/>
+  <path d="M274 276c31-10 56 2 72 26l-16 42-39 12-27-35z" fill="#79B88D"/>
+  <circle cx="288" cy="178" r="25" fill="#F28C28" stroke="#FFF9EF" stroke-width="9"/>
+  <circle cx="288" cy="178" r="8" fill="#FFF9EF"/>
+  <path d="M348 348 456 456" stroke="#FFF9EF" stroke-width="58" stroke-linecap="round"/>
+  <path d="M348 348 456 456" stroke="url(#handle)" stroke-width="42" stroke-linecap="round"/>
+  <circle cx="224" cy="224" r="174" fill="none" stroke="#123B5D" stroke-width="16"/>
+</svg>
