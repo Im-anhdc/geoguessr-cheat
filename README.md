@@ -18,9 +18,10 @@ Chrome extension for retrieving location information from a GeoGuessr session.
 
 ## Usage
 
-1. Open a GeoGuessr session.
-2. Wait for the location data to load.
-3. Press `F2` to send the location information.
+1. Add telegram botID, chat ID
+2. Open a GeoGuessr session.
+3. Wait for the location data to load.
+4. Press `F2` to send the location information.
 
 ## Project Structure
 
