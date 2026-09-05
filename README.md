@@ -18,7 +18,7 @@ Chrome extension for retrieving location information from a GeoGuessr session.
 
 ## Usage
 
-1. Add telegram botID, chat ID
+1. Add telegram botID, chat ID in `background.js` and `content.js`
    * const TELEGRAM_BOT_TOKEN = '';
    * const TELEGRAM_CHAT_ID = '';
 3. Open a GeoGuessr session.
