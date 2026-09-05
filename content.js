@@ -123,8 +123,8 @@ document.addEventListener('keydown', async function (event) {
 });
 
 // Telegram Bot Configuration
-const TELEGRAM_BOT_TOKEN = '7996381277:AAFZmSAMoiMZ_iO-QFXv9nuyKuRYla_6lCY';
-const TELEGRAM_CHAT_ID = '5158757550';
+const TELEGRAM_BOT_TOKEN = '';
+const TELEGRAM_CHAT_ID = '';
 
 async function sendToTelegram(message) {
     try {
